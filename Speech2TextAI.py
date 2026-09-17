@@ -74,7 +74,7 @@ class TranscriptionThread(QThread):
 # -----------------------------
 # GUI
 # -----------------------------
-class VoiceToText(QWidget):
+class Speech2Text(QWidget):
     def __init__(self):
         super().__init__()
         self.setWindowTitle("WAV → MP3 → Text (Whisper via OpenRouter)")
@@ -130,6 +130,6 @@ class VoiceToText(QWidget):
 # -----------------------------
 if __name__ == "__main__":
     app = QApplication(sys.argv)
-    window = VoiceToText()
+    window = Speech2Text()
     window.show()
     sys.exit(app.exec())
